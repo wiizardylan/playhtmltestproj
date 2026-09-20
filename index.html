@@ -47,6 +47,14 @@
       object-fit: contain;
       pointer-events: none;
     }
+
+  /* Use [data-playhtml-hover], NOT :hover, so the effect fires
+     for everyone when anyone on the page hovers the element. */
+  #hover-pad[data-playhtml-hover] {
+    background: #fde047;
+    transform: scale(1.05);
+  }
+
   </style>
     
 
@@ -71,6 +79,32 @@
         <img src="https://playhtml.fun/docs/long-cat.png" alt="" draggable="false" />
       </div>
     </div>
+
+  <div can-hover id="hover-pad">hover me</div>
+   
+   
+ <!-- import { CanPlayElement } from "@playhtml/react";
+import { TagType } from "playhtml";
+
+<CanPlayElement
+  tagInfo={[TagType.CanHover]}
+  id="hover-pad"
+  defaultData={{}}
+  myDefaultAwareness={ "#3b82f6" }
+>
+  {({ awareness }) => (
+    <div
+      style={{
+        background: `linear-gradient(45deg, ${awareness.join( ", " )})`,
+      }}
+    >
+        hover me
+      </div>
+      )}
+</CanPlayElement> -->
+
+
+
   </main>
 
 
