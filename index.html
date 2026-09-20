@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
+<head></head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Drag with can-move</title>
@@ -48,6 +48,11 @@
       pointer-events: none;
     }
   </style>
+    <script type="module">
+  import { playhtml } from "https://unpkg.com/playhtml";
+  playhtml.init();
+  </script>
+
 </head>
 <body>
   <main>
@@ -78,5 +83,7 @@
 
     await playhtml.init({ developmentMode: true });
   </script>
+
+
 </body>
 </html>
