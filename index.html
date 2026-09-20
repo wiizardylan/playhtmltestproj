@@ -72,18 +72,30 @@
       </div>
     </div>
   </main>
+
+
   
   <script type="module">
   import { playhtml } from "https://unpkg.com/playhtml";
-  playhtml.init();
+  playhtml.init({
+        cursors: {
+          enabled: true,
+        }
+      });
   </script>
 
   <script type="module">
     import { playhtml } from "playhtml";
 
-    // Built-in capabilities need no custom handlers.
+      playhtml.init({
+        cursors: {
+          enabled: true,
+        }
+      });
 
     await playhtml.init({ developmentMode: true });
+
+    
   </script>
 
 
